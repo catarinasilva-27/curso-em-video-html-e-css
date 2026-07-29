@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte/Pré-formatado</h2>
-    <p>
-        Nesta frase temos um <code>print("Hello, World!")</code> usando a tag &lt;code&gt;!
-    </p>
-    <pre>
-        <code>
-            num = int(input("Digita um número: "))
-            if num % 2 == 0:
-                print(f"O número {num}é par!")
-            else:
-                print(f"O número {num} é ímpar!")
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria um grande amigo: <q>Estou rodeado de idiotas</q> usando a tag &lt;q&gt;!</p>
-    <h2>Citações completas</h2>
-    <p>Segundo Baden-Powell: <blockquote>Se tiveres o hábito de fazer as coisas com alegria,raramente encontrarás situações difíceis.</blockquote>Usei a tag &lt;blockquote&gt;!</p>
-    <h2>Abreviações</h2>
-    <p>O <abbr title="HyperText Markup Language">HTML</abbr> é a linguagem de marcação padrão para criar páginas web. <br>Abreviei com a tag &lt;abbr&gt;!</p>
+    <h1>Trabalhar com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="I"> <!-- 1 a A i I-->
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar o pequeno-almoço</li>
+        <li>Ir para o trabalho</li>
+        <li>Trabalhar</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!-- disc circle square -->
+        <li>Frutas</li>
+        <li>Legumes</li>
+        <li>Carnes</li>
+        <li>Peixes</li>
+        <li>Massas</li>
+        <li>Chocolates</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Ovos</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Pascal</li>
+            <li>Basic</li>
+            <li>Fortran</li>
+        </ol>
+        <li>Atuais</li>
+        <ol type="a" start="4">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+        </ol>   
+    </ol>
+    <h2>Os meus filmes favoritos</h2>
+    <ol>
+        <li>Pixar</li>
+        <ul type="disc">
+            <li>Up</li>
+            <li>Ratatouille</li>
+            <li>Wall-E</li>
+        </ul>
+        <li>Marvel</li>
+        <ul type="disc">
+            <li>Homem de Ferro</li>
+            <li>Capitão América</li>    
+            <li>Thor</li>
+        </ul>
+        <li>Cultura</li>
+        <ul type="disc">
+            <li>Regresso ao futuro</li>
+            <ol type="i">
+                <li>Regresso ao futuro 1</li>
+                <li>Regresso ao futuro 2</li>
+                <li>Regresso ao futuro 3</li>
+            </ol>
+            <li>ET - O extraterrestre</li>
+            <li>Seven - os sete pecados capitais</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criar páginas web.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo para definir a aparência das páginas web.</dd>
+    </dl>
 </body>
 </html>
