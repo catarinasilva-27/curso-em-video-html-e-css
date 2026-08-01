@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir em dispositivos diferentes ou muda o tamanho da janela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem grande">
+    </picture>
+    <h1>Reprodução de aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML 5.</p>
+    <audio src="midia/wildfire-jessievilla.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/wildfire-jessievilla.mp3" type="audio/mpeg">
+        <source src="midia/wildfire-jessievilla.ogg" type="audio/ogg">
+        <source src="midia/wildfire-jessievilla.wav" type="audio/wav">
+        <p>Infelizmente o teu navegador não consegue reproduzir este áudio. <a href="midia/wildfire-jessievilla.mp3">CLica aqui para baixar.</a></p>
+    </audio>
+    <h1>Reprodução de vídeo</h1>
+    <p>Vamos aprender a reproduzir vídeos em HTML 5.</p>
+    <h2>Vídeos hospedados localmente</h2>
+    <video src="midia/video.mp4" controls width="500px"></video>
+    <!-- Com vídeo também se pode usar source -->
+    <!-- Formatos: MP4 M4V WEBM OGV -->
+    <!-- Boa prática: Colcocar do mais leve para o mais pesado-->
+    <h2>Vídeos hospedados em servidores externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nCKwUB8EVbc?si=IkwOqk2pNiTNlfEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
